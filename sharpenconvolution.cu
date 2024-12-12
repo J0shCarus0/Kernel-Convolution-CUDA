@@ -1,11 +1,49 @@
 #include <stdio.h>
 #include <math.h>
+#include <cuda_runtime.h>
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
+
+__global__ void cuda_convolve(unsigned char* image, unsigned char* convolvedImage, int height, int width, int channels, float* kernel, int kernelSize)
+{
+	// Thread identifiers
+	int x = blockIdx.x * blockDim.x + threadIdx.x;
+	int y = blockIdx.y * blockDim.y + threadIdx.y;
+	int c = threadIdx.z;
+
+	if(x < width && y < height && c < channels)
+	{
+		unsigned char pixelValue = 0.0f;
+		for(int rowOffset = -kernelSize / 2; rowOffset <= kernelSize / 2; rowOffset++)
+		{
+			for(int colOffset = -kernelSize / 2; colOffset <= kernelSize / 2; colOffset++)
+			{
+				int xCoordImg = x + rowOffset;
+				int yCoordImg = y + colOffset;
+				int imageIdx = (yCoordImg * width + xCoordImg) * channels + c;
+
+				int kernelIdx = (rowOffset + kernelSize / 2) * kernelSize + (colOffset + kernelSize / 2);
+
+				// Prevent overflow
+				if(pixelValue + kernel[kernelIdx] * image[imageIdx] < pixelValue)
+				{
+					pixelValue = 0xff;
+				}
+				else
+				{
+					pixelValue += kernel[kernelIdx] * image[imageIdx];
+				}
+			}
+		}
+
+		int outIdx = (y * width + x) * channels + c;
+		convolvedImage[outIdx] = pixelValue;
+	}
+}
 
 __global__ void evaluate(int x, int* coeffArr, int* outputTerms)
 {
@@ -75,12 +113,56 @@ int main()
 	kernel[4] = 1;//0.8180f; // Center
 	
 	unsigned char* convolvedImage = stbi_load("./chicago.jpg", &width, &height, &channels, 0);//= (unsigned char*)malloc(N * channels * sizeof(unsigned char*));
-    convolve(image, convolvedImage, height, width, channels, kernel, k_size);
 
-	int result; 
-    if(result = stbi_write_png("./output.jpg", width, height, channels, convolvedImage, width * channels)) 
+	// Allocate GPU memory
+	unsigned char* d_image;
+	unsigned char* d_convolvedImage;
+	float* d_kernel;
+	cudaMalloc(&d_image, N * channels * sizeof(unsigned char));
+	cudaMalloc(&d_convolvedImage, N * channels * sizeof(unsigned char));
+	cudaMalloc(&d_kernel, k_size * k_size * sizeof(float));
+
+	// Copy data into GPU
+	cudaMemcpy(d_image, image, N * channels * sizeof(unsigned char), cudaMemcpyHostToDevice);
+	cudaMemcpy(d_kernel, kernel, k_size * k_size * sizeof(float), cudaMemcpyHostToDevice);
+
+	// Define threads
+	dim3 blockSize(3, 3, channels);
+	dim3 gridSize((width + blockSize.x - 1) / blockSize.x, (height + blockSize.y - 1) / blockSize.y);
+
+	// Perform operation
+	cuda_convolve<<<gridSize, blockSize>>>(d_image, d_convolvedImage, height, width, channels, d_kernel, 3);
+
+	// Wait for operation to complete
+	cudaDeviceSynchronize();
+	
+	// Copy data out of GPU
+	cudaMemcpy(convolvedImage, d_convolvedImage, N * channels * sizeof(unsigned char), cudaMemcpyDeviceToHost);
+
+	// Free GPU memory
+	cudaFree(d_image);
+	cudaFree(d_convolvedImage);
+	cudaFree(d_kernel);
+
+	int result; 	
+    if(result = stbi_write_png("./cuda_output.jpg", width, height, channels, convolvedImage, width * channels)) 
 	{
-		printf("Image saved successfully\n");
+		printf("Cuda convolved Image saved successfully\n");
+		for(int i = 0; i < 10; i++)
+		{
+			printf("Value check: %d | %d\n", image[i], convolvedImage[i]);
+		}
+    }
+	else 
+	{
+        printf("Error saving image\n");
+    }
+
+	convolve(image, convolvedImage, height, width, channels, kernel, k_size);
+
+    if(result = stbi_write_png("./lin_output.jpg", width, height, channels, convolvedImage, width * channels)) 
+	{
+		printf("Linear convolved Image saved successfully\n");
 		for(int i = 0; i < 10; i++)
 		{
 			printf("Value check: %d | %d\n", image[i], convolvedImage[i]);
