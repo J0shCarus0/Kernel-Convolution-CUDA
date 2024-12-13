@@ -1,0 +1,1947 @@
+Filename:	./Cat.jpg
+Dimensions:	481x480
+	Kernel:	3
+		Cuda convolved Image saved successfully
+		Value check: 226 | 226
+		Value check: 210 | 210
+		Value check: 239 | 239
+		Value check: 226 | 226
+		Value check: 210 | 210
+		Value check: 239 | 239
+		Value check: 226 | 226
+		Value check: 210 | 210
+		Value check: 240 | 239
+		Value check: 227 | 226
+		Cuda completion time:	0.000314
+		Linear convolved Image saved successfully
+		Value check: 226 | 226
+		Value check: 210 | 210
+		Value check: 239 | 239
+		Value check: 226 | 226
+		Value check: 210 | 210
+		Value check: 239 | 239
+		Value check: 226 | 226
+		Value check: 210 | 210
+		Value check: 240 | 239
+		Value check: 227 | 226
+		Linear completion time:	0.031951
+	Kernel:	5
+		Cuda convolved Image saved successfully
+		Value check: 226 | 226
+		Value check: 210 | 210
+		Value check: 239 | 238
+		Value check: 226 | 226
+		Value check: 210 | 210
+		Value check: 239 | 238
+		Value check: 226 | 226
+		Value check: 210 | 210
+		Value check: 240 | 238
+		Value check: 227 | 226
+		Cuda completion time:	0.000033
+		Linear convolved Image saved successfully
+		Value check: 226 | 226
+		Value check: 210 | 210
+		Value check: 239 | 238
+		Value check: 226 | 226
+		Value check: 210 | 210
+		Value check: 239 | 238
+		Value check: 226 | 226
+		Value check: 210 | 210
+		Value check: 240 | 238
+		Value check: 227 | 226
+		Linear completion time:	0.075796
+	Kernel:	7
+		Cuda convolved Image saved successfully
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 239 | 238
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 239 | 238
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 240 | 238
+		Value check: 227 | 226
+		Cuda completion time:	0.000046
+		Linear convolved Image saved successfully
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 239 | 238
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 239 | 238
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 240 | 238
+		Value check: 227 | 226
+		Linear completion time:	0.145009
+	Kernel:	9
+		Cuda convolved Image saved successfully
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 239 | 237
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 239 | 237
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 240 | 237
+		Value check: 227 | 226
+		Cuda completion time:	0.000064
+		Linear convolved Image saved successfully
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 239 | 237
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 239 | 237
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 240 | 237
+		Value check: 227 | 226
+		Linear completion time:	0.236659
+	Kernel:	11
+		Cuda convolved Image saved successfully
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 239 | 237
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 239 | 237
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 240 | 237
+		Value check: 227 | 225
+		Cuda completion time:	0.000081
+		Linear convolved Image saved successfully
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 239 | 237
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 239 | 237
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 240 | 237
+		Value check: 227 | 225
+		Linear completion time:	0.354168
+	Kernel:	13
+		Cuda convolved Image saved successfully
+		Value check: 226 | 225
+		Value check: 210 | 208
+		Value check: 239 | 236
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 239 | 236
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 240 | 236
+		Value check: 227 | 225
+		Cuda completion time:	0.000101
+		Linear convolved Image saved successfully
+		Value check: 226 | 225
+		Value check: 210 | 208
+		Value check: 239 | 236
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 239 | 236
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 240 | 236
+		Value check: 227 | 225
+		Linear completion time:	0.492119
+	Kernel:	15
+		Cuda convolved Image saved successfully
+		Value check: 226 | 225
+		Value check: 210 | 208
+		Value check: 239 | 236
+		Value check: 226 | 225
+		Value check: 210 | 208
+		Value check: 239 | 236
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 240 | 236
+		Value check: 227 | 225
+		Cuda completion time:	0.000127
+		Linear convolved Image saved successfully
+		Value check: 226 | 225
+		Value check: 210 | 208
+		Value check: 239 | 236
+		Value check: 226 | 225
+		Value check: 210 | 208
+		Value check: 239 | 236
+		Value check: 226 | 225
+		Value check: 210 | 209
+		Value check: 240 | 236
+		Value check: 227 | 225
+		Linear completion time:	0.653171
+Filename:	./chicago.jpg
+Dimensions:	3072x4080
+	Kernel:	3
+		Cuda convolved Image saved successfully
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Cuda completion time:	0.000431
+		Linear convolved Image saved successfully
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Linear completion time:	1.715627
+	Kernel:	5
+		Cuda convolved Image saved successfully
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Cuda completion time:	0.000862
+		Linear convolved Image saved successfully
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Linear completion time:	4.130487
+	Kernel:	7
+		Cuda convolved Image saved successfully
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Cuda completion time:	0.001420
+		Linear convolved Image saved successfully
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Linear completion time:	7.893646
+	Kernel:	9
+		Cuda convolved Image saved successfully
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Cuda completion time:	0.002102
+		Linear convolved Image saved successfully
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Linear completion time:	12.926589
+	Kernel:	11
+		Cuda convolved Image saved successfully
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Cuda completion time:	0.002972
+		Linear convolved Image saved successfully
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Linear completion time:	19.379302
+	Kernel:	13
+		Cuda convolved Image saved successfully
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Cuda completion time:	0.003985
+		Linear convolved Image saved successfully
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Linear completion time:	26.984982
+	Kernel:	15
+		Cuda convolved Image saved successfully
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Cuda completion time:	0.005157
+		Linear convolved Image saved successfully
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Value check: 211 | 211
+		Value check: 231 | 231
+		Value check: 194 | 194
+		Linear completion time:	35.849889
+Filename:	./cliff.jpg
+Dimensions:	6000x4000
+	Kernel:	3
+		Cuda convolved Image saved successfully
+		Value check: 0 | 2
+		Value check: 147 | 153
+		Value check: 214 | 219
+		Value check: 4 | 3
+		Value check: 157 | 154
+		Value check: 224 | 221
+		Value check: 10 | 2
+		Value check: 163 | 153
+		Value check: 230 | 220
+		Value check: 3 | 2
+		Cuda completion time:	0.000844
+		Linear convolved Image saved successfully
+		Value check: 0 | 2
+		Value check: 147 | 153
+		Value check: 214 | 219
+		Value check: 4 | 3
+		Value check: 157 | 154
+		Value check: 224 | 221
+		Value check: 10 | 2
+		Value check: 163 | 153
+		Value check: 230 | 220
+		Value check: 3 | 2
+		Linear completion time:	3.298424
+	Kernel:	5
+		Cuda convolved Image saved successfully
+		Value check: 0 | 2
+		Value check: 147 | 153
+		Value check: 214 | 219
+		Value check: 4 | 2
+		Value check: 157 | 152
+		Value check: 224 | 219
+		Value check: 10 | 2
+		Value check: 163 | 151
+		Value check: 230 | 218
+		Value check: 3 | 1
+		Cuda completion time:	0.001612
+		Linear convolved Image saved successfully
+		Value check: 0 | 2
+		Value check: 147 | 153
+		Value check: 214 | 219
+		Value check: 4 | 2
+		Value check: 157 | 152
+		Value check: 224 | 219
+		Value check: 10 | 2
+		Value check: 163 | 151
+		Value check: 230 | 218
+		Value check: 3 | 1
+		Linear completion time:	7.924694
+	Kernel:	7
+		Cuda convolved Image saved successfully
+		Value check: 0 | 1
+		Value check: 147 | 153
+		Value check: 214 | 218
+		Value check: 4 | 1
+		Value check: 157 | 152
+		Value check: 224 | 218
+		Value check: 10 | 1
+		Value check: 163 | 152
+		Value check: 230 | 219
+		Value check: 3 | 1
+		Cuda completion time:	0.002693
+		Linear convolved Image saved successfully
+		Value check: 0 | 1
+		Value check: 147 | 153
+		Value check: 214 | 218
+		Value check: 4 | 1
+		Value check: 157 | 152
+		Value check: 224 | 218
+		Value check: 10 | 1
+		Value check: 163 | 152
+		Value check: 230 | 219
+		Value check: 3 | 1
+		Linear completion time:	15.140130
+	Kernel:	9
+		Cuda convolved Image saved successfully
+		Value check: 0 | 1
+		Value check: 147 | 153
+		Value check: 214 | 218
+		Value check: 4 | 1
+		Value check: 157 | 152
+		Value check: 224 | 218
+		Value check: 10 | 1
+		Value check: 163 | 152
+		Value check: 230 | 219
+		Value check: 3 | 1
+		Cuda completion time:	0.003997
+		Linear convolved Image saved successfully
+		Value check: 0 | 1
+		Value check: 147 | 153
+		Value check: 214 | 218
+		Value check: 4 | 1
+		Value check: 157 | 152
+		Value check: 224 | 218
+		Value check: 10 | 1
+		Value check: 163 | 152
+		Value check: 230 | 219
+		Value check: 3 | 1
+		Linear completion time:	24.762510
+	Kernel:	11
+		Cuda convolved Image saved successfully
+		Value check: 0 | 1
+		Value check: 147 | 153
+		Value check: 214 | 218
+		Value check: 4 | 1
+		Value check: 157 | 153
+		Value check: 224 | 218
+		Value check: 10 | 1
+		Value check: 163 | 152
+		Value check: 230 | 219
+		Value check: 3 | 1
+		Cuda completion time:	0.005657
+		Linear convolved Image saved successfully
+		Value check: 0 | 1
+		Value check: 147 | 153
+		Value check: 214 | 218
+		Value check: 4 | 1
+		Value check: 157 | 153
+		Value check: 224 | 218
+		Value check: 10 | 1
+		Value check: 163 | 152
+		Value check: 230 | 219
+		Value check: 3 | 1
+		Linear completion time:	37.125164
+	Kernel:	13
+		Cuda convolved Image saved successfully
+		Value check: 0 | 1
+		Value check: 147 | 153
+		Value check: 214 | 218
+		Value check: 4 | 1
+		Value check: 157 | 153
+		Value check: 224 | 219
+		Value check: 10 | 1
+		Value check: 163 | 153
+		Value check: 230 | 219
+		Value check: 3 | 1
+		Cuda completion time:	0.007598
+		Linear convolved Image saved successfully
+		Value check: 0 | 1
+		Value check: 147 | 153
+		Value check: 214 | 218
+		Value check: 4 | 1
+		Value check: 157 | 153
+		Value check: 224 | 219
+		Value check: 10 | 1
+		Value check: 163 | 153
+		Value check: 230 | 219
+		Value check: 3 | 1
+		Linear completion time:	51.695405
+	Kernel:	15
+		Cuda convolved Image saved successfully
+		Value check: 0 | 1
+		Value check: 147 | 153
+		Value check: 214 | 218
+		Value check: 4 | 1
+		Value check: 157 | 153
+		Value check: 224 | 218
+		Value check: 10 | 1
+		Value check: 163 | 152
+		Value check: 230 | 218
+		Value check: 3 | 1
+		Cuda completion time:	0.009887
+		Linear convolved Image saved successfully
+		Value check: 0 | 1
+		Value check: 147 | 153
+		Value check: 214 | 218
+		Value check: 4 | 1
+		Value check: 157 | 153
+		Value check: 224 | 218
+		Value check: 10 | 1
+		Value check: 163 | 152
+		Value check: 230 | 218
+		Value check: 3 | 1
+		Linear completion time:	68.681301
+Filename:	./coffee.jpg
+Dimensions:	3784x2764
+	Kernel:	3
+		Cuda convolved Image saved successfully
+		Value check: 158 | 158
+		Value check: 173 | 173
+		Value check: 156 | 155
+		Value check: 159 | 158
+		Value check: 174 | 173
+		Value check: 156 | 155
+		Value check: 159 | 158
+		Value check: 174 | 173
+		Value check: 154 | 155
+		Value check: 157 | 158
+		Cuda completion time:	0.000371
+		Linear convolved Image saved successfully
+		Value check: 158 | 158
+		Value check: 173 | 173
+		Value check: 156 | 155
+		Value check: 159 | 158
+		Value check: 174 | 173
+		Value check: 156 | 155
+		Value check: 159 | 158
+		Value check: 174 | 173
+		Value check: 154 | 155
+		Value check: 157 | 158
+		Linear completion time:	1.423065
+	Kernel:	5
+		Cuda convolved Image saved successfully
+		Value check: 158 | 158
+		Value check: 173 | 173
+		Value check: 156 | 155
+		Value check: 159 | 158
+		Value check: 174 | 173
+		Value check: 156 | 156
+		Value check: 159 | 159
+		Value check: 174 | 174
+		Value check: 154 | 156
+		Value check: 157 | 159
+		Cuda completion time:	0.000719
+		Linear convolved Image saved successfully
+		Value check: 158 | 158
+		Value check: 173 | 173
+		Value check: 156 | 155
+		Value check: 159 | 158
+		Value check: 174 | 173
+		Value check: 156 | 156
+		Value check: 159 | 159
+		Value check: 174 | 174
+		Value check: 154 | 156
+		Value check: 157 | 159
+		Linear completion time:	3.443359
+	Kernel:	7
+		Cuda convolved Image saved successfully
+		Value check: 158 | 158
+		Value check: 173 | 173
+		Value check: 156 | 156
+		Value check: 159 | 159
+		Value check: 174 | 174
+		Value check: 156 | 156
+		Value check: 159 | 159
+		Value check: 174 | 174
+		Value check: 154 | 156
+		Value check: 157 | 159
+		Cuda completion time:	0.001194
+		Linear convolved Image saved successfully
+		Value check: 158 | 158
+		Value check: 173 | 173
+		Value check: 156 | 156
+		Value check: 159 | 159
+		Value check: 174 | 174
+		Value check: 156 | 156
+		Value check: 159 | 159
+		Value check: 174 | 174
+		Value check: 154 | 156
+		Value check: 157 | 159
+		Linear completion time:	6.586299
+	Kernel:	9
+		Cuda convolved Image saved successfully
+		Value check: 158 | 159
+		Value check: 173 | 174
+		Value check: 156 | 156
+		Value check: 159 | 159
+		Value check: 174 | 174
+		Value check: 156 | 156
+		Value check: 159 | 159
+		Value check: 174 | 174
+		Value check: 154 | 157
+		Value check: 157 | 160
+		Cuda completion time:	0.001766
+		Linear convolved Image saved successfully
+		Value check: 158 | 159
+		Value check: 173 | 174
+		Value check: 156 | 156
+		Value check: 159 | 159
+		Value check: 174 | 174
+		Value check: 156 | 156
+		Value check: 159 | 159
+		Value check: 174 | 174
+		Value check: 154 | 157
+		Value check: 157 | 160
+		Linear completion time:	10.792167
+	Kernel:	11
+		Cuda convolved Image saved successfully
+		Value check: 158 | 159
+		Value check: 173 | 174
+		Value check: 156 | 156
+		Value check: 159 | 159
+		Value check: 174 | 174
+		Value check: 156 | 157
+		Value check: 159 | 160
+		Value check: 174 | 175
+		Value check: 154 | 157
+		Value check: 157 | 160
+		Cuda completion time:	0.002492
+		Linear convolved Image saved successfully
+		Value check: 158 | 159
+		Value check: 173 | 174
+		Value check: 156 | 156
+		Value check: 159 | 159
+		Value check: 174 | 174
+		Value check: 156 | 157
+		Value check: 159 | 160
+		Value check: 174 | 175
+		Value check: 154 | 157
+		Value check: 157 | 160
+		Linear completion time:	16.169838
+	Kernel:	13
+		Cuda convolved Image saved successfully
+		Value check: 158 | 160
+		Value check: 173 | 175
+		Value check: 156 | 157
+		Value check: 159 | 160
+		Value check: 174 | 175
+		Value check: 156 | 157
+		Value check: 159 | 160
+		Value check: 174 | 175
+		Value check: 154 | 157
+		Value check: 157 | 160
+		Cuda completion time:	0.003342
+		Linear convolved Image saved successfully
+		Value check: 158 | 160
+		Value check: 173 | 175
+		Value check: 156 | 157
+		Value check: 159 | 160
+		Value check: 174 | 175
+		Value check: 156 | 157
+		Value check: 159 | 160
+		Value check: 174 | 175
+		Value check: 154 | 157
+		Value check: 157 | 160
+		Linear completion time:	22.515604
+	Kernel:	15
+		Cuda convolved Image saved successfully
+		Value check: 158 | 160
+		Value check: 173 | 175
+		Value check: 156 | 158
+		Value check: 159 | 161
+		Value check: 174 | 176
+		Value check: 156 | 158
+		Value check: 159 | 161
+		Value check: 174 | 176
+		Value check: 154 | 158
+		Value check: 157 | 161
+		Cuda completion time:	0.004332
+		Linear convolved Image saved successfully
+		Value check: 158 | 160
+		Value check: 173 | 175
+		Value check: 156 | 158
+		Value check: 159 | 161
+		Value check: 174 | 176
+		Value check: 156 | 158
+		Value check: 159 | 161
+		Value check: 174 | 176
+		Value check: 154 | 158
+		Value check: 157 | 161
+		Linear completion time:	29.912167
+Filename:	./dog.jpg
+Dimensions:	3941x5911
+	Kernel:	3
+		Cuda convolved Image saved successfully
+		Value check: 219 | 219
+		Value check: 182 | 183
+		Value check: 218 | 219
+		Value check: 218 | 219
+		Value check: 184 | 184
+		Value check: 220 | 220
+		Value check: 220 | 220
+		Value check: 188 | 186
+		Value check: 224 | 222
+		Value check: 224 | 222
+		Cuda completion time:	0.000833
+		Linear convolved Image saved successfully
+		Value check: 219 | 219
+		Value check: 182 | 183
+		Value check: 218 | 219
+		Value check: 218 | 219
+		Value check: 184 | 184
+		Value check: 220 | 220
+		Value check: 220 | 220
+		Value check: 188 | 186
+		Value check: 224 | 222
+		Value check: 224 | 222
+		Linear completion time:	3.183142
+	Kernel:	5
+		Cuda convolved Image saved successfully
+		Value check: 219 | 220
+		Value check: 182 | 184
+		Value check: 218 | 220
+		Value check: 218 | 220
+		Value check: 184 | 185
+		Value check: 220 | 221
+		Value check: 220 | 221
+		Value check: 188 | 185
+		Value check: 224 | 221
+		Value check: 224 | 221
+		Cuda completion time:	0.001564
+		Linear convolved Image saved successfully
+		Value check: 219 | 220
+		Value check: 182 | 184
+		Value check: 218 | 220
+		Value check: 218 | 220
+		Value check: 184 | 185
+		Value check: 220 | 221
+		Value check: 220 | 221
+		Value check: 188 | 185
+		Value check: 224 | 221
+		Value check: 224 | 221
+		Linear completion time:	7.673635
+	Kernel:	7
+		Cuda convolved Image saved successfully
+		Value check: 219 | 221
+		Value check: 182 | 185
+		Value check: 218 | 221
+		Value check: 218 | 221
+		Value check: 184 | 185
+		Value check: 220 | 221
+		Value check: 220 | 221
+		Value check: 188 | 185
+		Value check: 224 | 221
+		Value check: 224 | 221
+		Cuda completion time:	0.002607
+		Linear convolved Image saved successfully
+		Value check: 219 | 221
+		Value check: 182 | 185
+		Value check: 218 | 221
+		Value check: 218 | 221
+		Value check: 184 | 185
+		Value check: 220 | 221
+		Value check: 220 | 221
+		Value check: 188 | 185
+		Value check: 224 | 221
+		Value check: 224 | 221
+		Linear completion time:	14.673709
+	Kernel:	9
+		Cuda convolved Image saved successfully
+		Value check: 219 | 221
+		Value check: 182 | 185
+		Value check: 218 | 221
+		Value check: 218 | 221
+		Value check: 184 | 185
+		Value check: 220 | 221
+		Value check: 220 | 221
+		Value check: 188 | 184
+		Value check: 224 | 220
+		Value check: 224 | 220
+		Cuda completion time:	0.003897
+		Linear convolved Image saved successfully
+		Value check: 219 | 221
+		Value check: 182 | 185
+		Value check: 218 | 221
+		Value check: 218 | 221
+		Value check: 184 | 185
+		Value check: 220 | 221
+		Value check: 220 | 221
+		Value check: 188 | 184
+		Value check: 224 | 220
+		Value check: 224 | 220
+		Linear completion time:	24.035516
+	Kernel:	11
+		Cuda convolved Image saved successfully
+		Value check: 219 | 221
+		Value check: 182 | 185
+		Value check: 218 | 221
+		Value check: 218 | 221
+		Value check: 184 | 185
+		Value check: 220 | 221
+		Value check: 220 | 221
+		Value check: 188 | 184
+		Value check: 224 | 220
+		Value check: 224 | 220
+		Cuda completion time:	0.005505
+		Linear convolved Image saved successfully
+		Value check: 219 | 221
+		Value check: 182 | 185
+		Value check: 218 | 221
+		Value check: 218 | 221
+		Value check: 184 | 185
+		Value check: 220 | 221
+		Value check: 220 | 221
+		Value check: 188 | 184
+		Value check: 224 | 220
+		Value check: 224 | 220
+		Linear completion time:	36.033090
+	Kernel:	13
+		Cuda convolved Image saved successfully
+		Value check: 219 | 221
+		Value check: 182 | 185
+		Value check: 218 | 221
+		Value check: 218 | 221
+		Value check: 184 | 185
+		Value check: 220 | 221
+		Value check: 220 | 221
+		Value check: 188 | 185
+		Value check: 224 | 221
+		Value check: 224 | 221
+		Cuda completion time:	0.007408
+		Linear convolved Image saved successfully
+		Value check: 219 | 221
+		Value check: 182 | 185
+		Value check: 218 | 221
+		Value check: 218 | 221
+		Value check: 184 | 185
+		Value check: 220 | 221
+		Value check: 220 | 221
+		Value check: 188 | 185
+		Value check: 224 | 221
+		Value check: 224 | 221
+		Linear completion time:	50.178802
+	Kernel:	15
+		Cuda convolved Image saved successfully
+		Value check: 219 | 221
+		Value check: 182 | 185
+		Value check: 218 | 221
+		Value check: 218 | 221
+		Value check: 184 | 185
+		Value check: 220 | 221
+		Value check: 220 | 221
+		Value check: 188 | 185
+		Value check: 224 | 221
+		Value check: 224 | 221
+		Cuda completion time:	0.009588
+		Linear convolved Image saved successfully
+		Value check: 219 | 221
+		Value check: 182 | 185
+		Value check: 218 | 221
+		Value check: 218 | 221
+		Value check: 184 | 185
+		Value check: 220 | 221
+		Value check: 220 | 221
+		Value check: 188 | 185
+		Value check: 224 | 221
+		Value check: 224 | 221
+		Linear completion time:	66.662899
+Filename:	./flowers.jpg
+Dimensions:	4000x2667
+	Kernel:	3
+		Cuda convolved Image saved successfully
+		Value check: 20 | 19
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 20 | 20
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 21 | 20
+		Value check: 1 | 0
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Cuda completion time:	0.000385
+		Linear convolved Image saved successfully
+		Value check: 20 | 19
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 20 | 20
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 21 | 20
+		Value check: 1 | 0
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Linear completion time:	1.453728
+	Kernel:	5
+		Cuda convolved Image saved successfully
+		Value check: 20 | 20
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 20 | 20
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 21 | 20
+		Value check: 1 | 0
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Cuda completion time:	0.000745
+		Linear convolved Image saved successfully
+		Value check: 20 | 20
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 20 | 20
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 21 | 20
+		Value check: 1 | 0
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Linear completion time:	3.519826
+	Kernel:	7
+		Cuda convolved Image saved successfully
+		Value check: 20 | 20
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 20 | 20
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 21 | 20
+		Value check: 1 | 0
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Cuda completion time:	0.001215
+		Linear convolved Image saved successfully
+		Value check: 20 | 20
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 20 | 20
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 21 | 20
+		Value check: 1 | 0
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Linear completion time:	6.718269
+	Kernel:	9
+		Cuda convolved Image saved successfully
+		Value check: 20 | 20
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 20 | 20
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 21 | 20
+		Value check: 1 | 1
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Cuda completion time:	0.001802
+		Linear convolved Image saved successfully
+		Value check: 20 | 20
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 20 | 20
+		Value check: 0 | 0
+		Value check: 0 | 0
+		Value check: 21 | 20
+		Value check: 1 | 1
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Linear completion time:	11.002966
+	Kernel:	11
+		Cuda convolved Image saved successfully
+		Value check: 20 | 21
+		Value check: 0 | 1
+		Value check: 0 | 0
+		Value check: 20 | 21
+		Value check: 0 | 1
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Value check: 1 | 1
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Cuda completion time:	0.002548
+		Linear convolved Image saved successfully
+		Value check: 20 | 21
+		Value check: 0 | 1
+		Value check: 0 | 0
+		Value check: 20 | 21
+		Value check: 0 | 1
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Value check: 1 | 1
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Linear completion time:	16.494578
+	Kernel:	13
+		Cuda convolved Image saved successfully
+		Value check: 20 | 21
+		Value check: 0 | 1
+		Value check: 0 | 0
+		Value check: 20 | 21
+		Value check: 0 | 1
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Value check: 1 | 1
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Cuda completion time:	0.003407
+		Linear convolved Image saved successfully
+		Value check: 20 | 21
+		Value check: 0 | 1
+		Value check: 0 | 0
+		Value check: 20 | 21
+		Value check: 0 | 1
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Value check: 1 | 1
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Linear completion time:	22.964902
+	Kernel:	15
+		Cuda convolved Image saved successfully
+		Value check: 20 | 21
+		Value check: 0 | 1
+		Value check: 0 | 0
+		Value check: 20 | 21
+		Value check: 0 | 1
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Value check: 1 | 1
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Cuda completion time:	0.004409
+		Linear convolved Image saved successfully
+		Value check: 20 | 21
+		Value check: 0 | 1
+		Value check: 0 | 0
+		Value check: 20 | 21
+		Value check: 0 | 1
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Value check: 1 | 1
+		Value check: 0 | 0
+		Value check: 21 | 21
+		Linear completion time:	30.510486
+Filename:	./palace.jpg
+Dimensions:	4288x2848
+	Kernel:	3
+		Cuda convolved Image saved successfully
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 196 | 195
+		Value check: 196 | 195
+		Cuda completion time:	0.000425
+		Linear convolved Image saved successfully
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 196 | 195
+		Value check: 196 | 195
+		Linear completion time:	1.665406
+	Kernel:	5
+		Cuda convolved Image saved successfully
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 196 | 195
+		Value check: 196 | 195
+		Cuda completion time:	0.000835
+		Linear convolved Image saved successfully
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 196 | 195
+		Value check: 196 | 195
+		Linear completion time:	4.028010
+	Kernel:	7
+		Cuda convolved Image saved successfully
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 196 | 195
+		Value check: 196 | 195
+		Cuda completion time:	0.001376
+		Linear convolved Image saved successfully
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 196 | 195
+		Value check: 196 | 195
+		Linear completion time:	7.694058
+	Kernel:	9
+		Cuda convolved Image saved successfully
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 196 | 195
+		Value check: 196 | 195
+		Cuda completion time:	0.002049
+		Linear convolved Image saved successfully
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 196 | 195
+		Value check: 196 | 195
+		Linear completion time:	12.594759
+	Kernel:	11
+		Cuda convolved Image saved successfully
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 196 | 195
+		Value check: 196 | 195
+		Cuda completion time:	0.002894
+		Linear convolved Image saved successfully
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 195 | 195
+		Value check: 195 | 195
+		Value check: 205 | 205
+		Value check: 196 | 195
+		Value check: 196 | 195
+		Linear completion time:	18.884454
+	Kernel:	13
+		Cuda convolved Image saved successfully
+		Value check: 195 | 196
+		Value check: 205 | 206
+		Value check: 195 | 196
+		Value check: 195 | 196
+		Value check: 205 | 206
+		Value check: 195 | 196
+		Value check: 195 | 196
+		Value check: 205 | 206
+		Value check: 196 | 196
+		Value check: 196 | 196
+		Cuda completion time:	0.003883
+		Linear convolved Image saved successfully
+		Value check: 195 | 196
+		Value check: 205 | 206
+		Value check: 195 | 196
+		Value check: 195 | 196
+		Value check: 205 | 206
+		Value check: 195 | 196
+		Value check: 195 | 196
+		Value check: 205 | 206
+		Value check: 196 | 196
+		Value check: 196 | 196
+		Linear completion time:	26.291476
+	Kernel:	15
+		Cuda convolved Image saved successfully
+		Value check: 195 | 196
+		Value check: 205 | 206
+		Value check: 195 | 196
+		Value check: 195 | 196
+		Value check: 205 | 206
+		Value check: 195 | 196
+		Value check: 195 | 196
+		Value check: 205 | 206
+		Value check: 196 | 196
+		Value check: 196 | 196
+		Cuda completion time:	0.005032
+		Linear convolved Image saved successfully
+		Value check: 195 | 196
+		Value check: 205 | 206
+		Value check: 195 | 196
+		Value check: 195 | 196
+		Value check: 205 | 206
+		Value check: 195 | 196
+		Value check: 195 | 196
+		Value check: 205 | 206
+		Value check: 196 | 196
+		Value check: 196 | 196
+		Linear completion time:	34.931706
+Filename:	./panda.jpg
+Dimensions:	1020x510
+	Kernel:	3
+		Cuda convolved Image saved successfully
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Cuda completion time:	0.000046
+		Linear convolved Image saved successfully
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Linear completion time:	0.071148
+	Kernel:	5
+		Cuda convolved Image saved successfully
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Cuda completion time:	0.000053
+		Linear convolved Image saved successfully
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Linear completion time:	0.172018
+	Kernel:	7
+		Cuda convolved Image saved successfully
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Cuda completion time:	0.000077
+		Linear convolved Image saved successfully
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Linear completion time:	0.331378
+	Kernel:	9
+		Cuda convolved Image saved successfully
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Cuda completion time:	0.000107
+		Linear convolved Image saved successfully
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Linear completion time:	0.534103
+	Kernel:	11
+		Cuda convolved Image saved successfully
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Cuda completion time:	0.000145
+		Linear convolved Image saved successfully
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Linear completion time:	0.800089
+	Kernel:	13
+		Cuda convolved Image saved successfully
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Cuda completion time:	0.000188
+		Linear convolved Image saved successfully
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Value check: 199 | 199
+		Value check: 209 | 209
+		Value check: 175 | 175
+		Linear completion time:	1.113279
+	Kernel:	15
+		Cuda convolved Image saved successfully
+		Value check: 175 | 176
+		Value check: 199 | 200
+		Value check: 209 | 210
+		Value check: 175 | 176
+		Value check: 199 | 200
+		Value check: 209 | 210
+		Value check: 175 | 176
+		Value check: 199 | 200
+		Value check: 209 | 210
+		Value check: 175 | 176
+		Cuda completion time:	0.000240
+		Linear convolved Image saved successfully
+		Value check: 175 | 176
+		Value check: 199 | 200
+		Value check: 209 | 210
+		Value check: 175 | 176
+		Value check: 199 | 200
+		Value check: 209 | 210
+		Value check: 175 | 176
+		Value check: 199 | 200
+		Value check: 209 | 210
+		Value check: 175 | 176
+		Linear completion time:	1.477545
+Filename:	./sunflower.jpg
+Dimensions:	600x400
+	Kernel:	3
+		Cuda convolved Image saved successfully
+		Value check: 253 | 253
+		Value check: 237 | 237
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 237
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 255 | 254
+		Cuda completion time:	0.000024
+		Linear convolved Image saved successfully
+		Value check: 253 | 253
+		Value check: 237 | 237
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 237
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 255 | 254
+		Linear completion time:	0.033661
+	Kernel:	5
+		Cuda convolved Image saved successfully
+		Value check: 253 | 253
+		Value check: 237 | 237
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 255 | 254
+		Cuda completion time:	0.000034
+		Linear convolved Image saved successfully
+		Value check: 253 | 253
+		Value check: 237 | 237
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 255 | 254
+		Linear completion time:	0.079161
+	Kernel:	7
+		Cuda convolved Image saved successfully
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 255 | 254
+		Cuda completion time:	0.000046
+		Linear convolved Image saved successfully
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 255 | 254
+		Linear completion time:	0.150899
+	Kernel:	9
+		Cuda convolved Image saved successfully
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 255 | 254
+		Cuda completion time:	0.000061
+		Linear convolved Image saved successfully
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 255 | 254
+		Linear completion time:	0.246244
+	Kernel:	11
+		Cuda convolved Image saved successfully
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 255 | 254
+		Cuda completion time:	0.000080
+		Linear convolved Image saved successfully
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 255 | 254
+		Linear completion time:	0.368069
+	Kernel:	13
+		Cuda convolved Image saved successfully
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 255 | 254
+		Cuda completion time:	0.000102
+		Linear convolved Image saved successfully
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 255 | 254
+		Linear completion time:	0.511818
+	Kernel:	15
+		Cuda convolved Image saved successfully
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 255 | 254
+		Cuda completion time:	0.000127
+		Linear convolved Image saved successfully
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 253 | 253
+		Value check: 237 | 236
+		Value check: 204 | 204
+		Value check: 255 | 254
+		Linear completion time:	0.678965
+Filename:	./forest(vertical).jpg
+Dimensions:	565x1390
+	Kernel:	3
+		Cuda convolved Image saved successfully
+		Value check: 29 | 30
+		Value check: 6 | 6
+		Value check: 35 | 41
+		Value check: 24 | 33
+		Value check: 0 | 4
+		Value check: 40 | 50
+		Value check: 28 | 41
+		Value check: 0 | 5
+		Value check: 58 | 49
+		Value check: 46 | 43
+		Cuda completion time:	0.000042
+		Linear convolved Image saved successfully
+		Value check: 29 | 30
+		Value check: 6 | 6
+		Value check: 35 | 41
+		Value check: 24 | 33
+		Value check: 0 | 4
+		Value check: 40 | 50
+		Value check: 28 | 41
+		Value check: 0 | 5
+		Value check: 58 | 49
+		Value check: 46 | 43
+		Linear completion time:	0.109656
+	Kernel:	5
+		Cuda convolved Image saved successfully
+		Value check: 29 | 33
+		Value check: 6 | 6
+		Value check: 35 | 45
+		Value check: 24 | 39
+		Value check: 0 | 7
+		Value check: 40 | 47
+		Value check: 28 | 42
+		Value check: 0 | 10
+		Value check: 58 | 51
+		Value check: 46 | 46
+		Cuda completion time:	0.000069
+		Linear convolved Image saved successfully
+		Value check: 29 | 33
+		Value check: 6 | 6
+		Value check: 35 | 45
+		Value check: 24 | 39
+		Value check: 0 | 7
+		Value check: 40 | 47
+		Value check: 28 | 42
+		Value check: 0 | 10
+		Value check: 58 | 51
+		Value check: 46 | 46
+		Linear completion time:	0.258018
+	Kernel:	7
+		Cuda convolved Image saved successfully
+		Value check: 29 | 36
+		Value check: 6 | 7
+		Value check: 35 | 40
+		Value check: 24 | 38
+		Value check: 0 | 8
+		Value check: 40 | 46
+		Value check: 28 | 42
+		Value check: 0 | 14
+		Value check: 58 | 51
+		Value check: 46 | 47
+		Cuda completion time:	0.000106
+		Linear convolved Image saved successfully
+		Value check: 29 | 36
+		Value check: 6 | 7
+		Value check: 35 | 40
+		Value check: 24 | 38
+		Value check: 0 | 8
+		Value check: 40 | 46
+		Value check: 28 | 42
+		Value check: 0 | 14
+		Value check: 58 | 51
+		Value check: 46 | 47
+		Linear completion time:	0.493595
+	Kernel:	9
+		Cuda convolved Image saved successfully
+		Value check: 29 | 36
+		Value check: 6 | 7
+		Value check: 35 | 41
+		Value check: 24 | 40
+		Value check: 0 | 13
+		Value check: 40 | 48
+		Value check: 28 | 47
+		Value check: 0 | 21
+		Value check: 58 | 59
+		Value check: 46 | 57
+		Cuda completion time:	0.000151
+		Linear convolved Image saved successfully
+		Value check: 29 | 36
+		Value check: 6 | 7
+		Value check: 35 | 41
+		Value check: 24 | 40
+		Value check: 0 | 13
+		Value check: 40 | 48
+		Value check: 28 | 47
+		Value check: 0 | 21
+		Value check: 58 | 59
+		Value check: 46 | 57
+		Linear completion time:	0.806381
+	Kernel:	11
+		Cuda convolved Image saved successfully
+		Value check: 29 | 42
+		Value check: 6 | 15
+		Value check: 35 | 45
+		Value check: 24 | 45
+		Value check: 0 | 21
+		Value check: 40 | 53
+		Value check: 28 | 54
+		Value check: 0 | 31
+		Value check: 58 | 62
+		Value check: 46 | 63
+		Cuda completion time:	0.000204
+		Linear convolved Image saved successfully
+		Value check: 29 | 42
+		Value check: 6 | 15
+		Value check: 35 | 45
+		Value check: 24 | 45
+		Value check: 0 | 21
+		Value check: 40 | 53
+		Value check: 28 | 54
+		Value check: 0 | 31
+		Value check: 58 | 62
+		Value check: 46 | 63
+		Linear completion time:	1.208468
+	Kernel:	13
+		Cuda convolved Image saved successfully
+		Value check: 29 | 47
+		Value check: 6 | 20
+		Value check: 35 | 51
+		Value check: 24 | 52
+		Value check: 0 | 29
+		Value check: 40 | 56
+		Value check: 28 | 58
+		Value check: 0 | 36
+		Value check: 58 | 60
+		Value check: 46 | 62
+		Cuda completion time:	0.000274
+		Linear convolved Image saved successfully
+		Value check: 29 | 47
+		Value check: 6 | 20
+		Value check: 35 | 51
+		Value check: 24 | 52
+		Value check: 0 | 29
+		Value check: 40 | 56
+		Value check: 28 | 58
+		Value check: 0 | 36
+		Value check: 58 | 60
+		Value check: 46 | 62
+		Linear completion time:	1.681307
+	Kernel:	15
+		Cuda convolved Image saved successfully
+		Value check: 29 | 54
+		Value check: 6 | 28
+		Value check: 35 | 54
+		Value check: 24 | 56
+		Value check: 0 | 32
+		Value check: 40 | 57
+		Value check: 28 | 58
+		Value check: 0 | 35
+		Value check: 58 | 58
+		Value check: 46 | 59
+		Cuda completion time:	0.000351
+		Linear convolved Image saved successfully
+		Value check: 29 | 54
+		Value check: 6 | 28
+		Value check: 35 | 54
+		Value check: 24 | 56
+		Value check: 0 | 32
+		Value check: 40 | 57
+		Value check: 28 | 58
+		Value check: 0 | 35
+		Value check: 58 | 58
+		Value check: 46 | 59
+		Linear completion time:	2.231702
+Filename:	./girl-with-camera(vertical).jpg
+Dimensions:	640x960
+	Kernel:	3
+		Cuda convolved Image saved successfully
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Cuda completion time:	0.000035
+		Linear convolved Image saved successfully
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Linear completion time:	0.084882
+	Kernel:	5
+		Cuda convolved Image saved successfully
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Cuda completion time:	0.000058
+		Linear convolved Image saved successfully
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Linear completion time:	0.202471
+	Kernel:	7
+		Cuda convolved Image saved successfully
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Cuda completion time:	0.000087
+		Linear convolved Image saved successfully
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Linear completion time:	0.385481
+	Kernel:	9
+		Cuda convolved Image saved successfully
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Cuda completion time:	0.000123
+		Linear convolved Image saved successfully
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Linear completion time:	0.631373
+	Kernel:	11
+		Cuda convolved Image saved successfully
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Cuda completion time:	0.000167
+		Linear convolved Image saved successfully
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Linear completion time:	0.945424
+	Kernel:	13
+		Cuda convolved Image saved successfully
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Cuda completion time:	0.000221
+		Linear convolved Image saved successfully
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Linear completion time:	1.315183
+	Kernel:	15
+		Cuda convolved Image saved successfully
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Cuda completion time:	0.000274
+		Linear convolved Image saved successfully
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Value check: 218 | 218
+		Value check: 212 | 212
+		Value check: 221 | 221
+		Linear completion time:	1.745472
