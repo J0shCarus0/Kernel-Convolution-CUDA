@@ -15,7 +15,7 @@ __global__ void cuda_convolve(unsigned char* image, unsigned char* convolvedImag
 	// Thread identifiers
 	int x = blockIdx.x * blockDim.x + threadIdx.x;
 	int y = blockIdx.y * blockDim.y + threadIdx.y;
-	int c = threadIdx.z;
+	int c = blockIdx.z;
 
 	// Thread boundary check
 	if(x < width && y < height && c < channels)
@@ -107,17 +107,25 @@ int main()
 	int width, height, channels;
     unsigned char* image;
 	char* filenames[] = {
-		"./Cat.jpg",
-		"./chicago.jpg", 
-		"./cliff.jpg", 
-		"./coffee.jpg", 
-		"./dog.jpg", 
-		"./flowers.jpg", 
-		"./palace.jpg", 
-		"./panda.jpg", 
-		"./sunflower.jpg", 
-		"./forest(vertical).jpg", 
-		"./girl-with-camera(vertical).jpg"
+		"./input/2k.jpg",
+		"./input/background.jpg",
+		"./input/boat.jpg",
+		"./input/butterfly.jpg",
+		"./input/Cat.jpg",
+		"./input/chicago.jpg",
+		"./input/cliff.jpg",
+		"./input/coffee.jpg",
+		"./input/dog.jpg",
+		"./input/flowers.jpg",
+		"./input/forest(vertical).jpg",
+		"./input/girl-with-camera(vertial).jpg",
+		"./input/mountain.jpg",
+		"./input/palace.jpg",
+		"./input/panda.jpg",
+		"./input/pink.jpg",
+		"./input/walkway.jpg",
+		"./input/window.jpg"
+		
 	};
 
 	int numFiles = 11;
@@ -170,7 +178,7 @@ int main()
 			cudaMemcpy(d_kernel, kernel, kernelSize * kernelSize * sizeof(float), cudaMemcpyHostToDevice);
 
 			// Define threads
-			dim3 blockSize(16, 16, 3);
+			dim3 blockSize(16, 16);
 			dim3 gridSize((width + blockSize.x - 1) / blockSize.x, (height + blockSize.y - 1) / blockSize.y);
 
 			// Start timer
@@ -180,6 +188,11 @@ int main()
 			cuda_convolve<<<gridSize, blockSize>>>(d_image, d_convolvedImage, height, width, channels, d_kernel, kernelSize);
 
 			// Wait for operation to complete
+			cudaError_t err = cudaGetLastError();
+			if (err != cudaSuccess) {
+				fprintf(stderr, "CUDA error after kernel launch: %s\n", cudaGetErrorString(err));
+				exit(1);
+			}
 			cudaDeviceSynchronize();
 
 			// End timer
@@ -196,8 +209,8 @@ int main()
 
 			int result; 	
 			char outFile[256];
-    		snprintf(outFile, sizeof(outFile), "%s%s", file, "_cuda.jpg");
-			if(result = stbi_write_png(outFile, width, height, channels, convolvedImage, width * channels)) 
+    		snprintf(outFile, sizeof(outFile), "%s%s", file, "_output.jpg");
+			if(result = stbi_write_jpg(outFile, width, height, channels, convolvedImage, width * channels)) 
 			{
 				printf("\t\tCuda convolved Image saved successfully\n");
 				for(int i = width; i < width + 10; i++)
@@ -216,8 +229,8 @@ int main()
 			endTime = clock();
 			timeElapsed = ((double) (endTime - startTime)) / CLOCKS_PER_SEC;
 
-    		snprintf(outFile, sizeof(outFile), "%s%s", file, "_linear.jpg");
-			if(result = stbi_write_png("./output_linear.jpg", width, height, channels, convolvedImage, width * channels)) 
+    		snprintf(outFile, sizeof(outFile), "%s%s", file, "_output.jpg");
+			if(result = stbi_write_jpg(outFile, width, height, channels, convolvedImage, width * channels)) 
 			{
 				printf("\t\tLinear convolved Image saved successfully\n");
 				for(int i = width; i < width + 10; i++)
