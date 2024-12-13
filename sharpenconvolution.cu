@@ -15,33 +15,34 @@ __global__ void cuda_convolve(unsigned char* image, unsigned char* convolvedImag
 	int y = blockIdx.y * blockDim.y + threadIdx.y;
 	int c = threadIdx.z;
 
+	// Thread boundary check
 	if(x < width && y < height && c < channels)
 	{
-		unsigned char pixelValue = 0.0f;
-		for(int rowOffset = -kernelSize / 2; rowOffset <= kernelSize / 2; rowOffset++)
+		float pixelValue = 0.0f;
+		int halfKernel = kernelSize / 2;
+		for(int rowOffset = -halfKernel; rowOffset <= halfKernel; rowOffset++)
 		{
-			for(int colOffset = -kernelSize / 2; colOffset <= kernelSize / 2; colOffset++)
+			int xCoordImg = x + rowOffset;
+			for(int colOffset = -halfKernel; colOffset <= halfKernel; colOffset++)
 			{
-				int xCoordImg = x + rowOffset;
 				int yCoordImg = y + colOffset;
 				int imageIdx = (yCoordImg * width + xCoordImg) * channels + c;
 
-				int kernelIdx = (rowOffset + kernelSize / 2) * kernelSize + (colOffset + kernelSize / 2);
+				// Boundary check
+				if((xCoordImg < 0 || xCoordImg >= width || yCoordImg < 0 || yCoordImg >= height))
+				{
+					continue;
+				}
 
-				// Prevent overflow
-				if(pixelValue + kernel[kernelIdx] * image[imageIdx] < pixelValue)
-				{
-					pixelValue = 0xff;
-				}
-				else
-				{
-					pixelValue += kernel[kernelIdx] * image[imageIdx];
-				}
+				int kernelIdx = (rowOffset + halfKernel) * kernelSize + (colOffset + halfKernel);
+				
+				pixelValue += kernel[kernelIdx] * float(image[imageIdx]);
 			}
 		}
 
+		pixelValue = pixelValue / 9;
 		int outIdx = (y * width + x) * channels + c;
-		convolvedImage[outIdx] = pixelValue;
+		convolvedImage[outIdx] = (unsigned char)fmax(0.0f, fmin(255.0f, pixelValue));
 	}
 }
 
@@ -57,7 +58,6 @@ __global__ void evaluate(int x, int* coeffArr, int* outputTerms)
 
 void convolve(unsigned char* image, unsigned char* convolvedImage, int height, int width, int channels, float* kernel, int kernelSize) 
 {
-	int outIndex = 0;
 	// Image looping by height x width x color channels
     for(int y = 0; y < height; y++) 
 	{
@@ -68,28 +68,30 @@ void convolve(unsigned char* image, unsigned char* convolvedImage, int height, i
 				int radiusx = kernelSize / 2;
 				int radiusy = kernelSize / 2;
 
-				float retf = 0.0f;
 				float totalWeight = 0.0f;
 
 				for(int iy = -radiusy; iy <= radiusy; iy++)
 				{
-					int ready = (y + iy + height) % height;
+					int ready = y + iy;
 					for(int ix = -radiusx; ix <= radiusx; ix++)
 					{
-						int readx = (x + ix + width) % width;
-						
-						float pixelValue = float(image[(ready * width + readx) * channels + channel]) / 255.0f;
+						int readx = x + ix;
+						// Boundary check
+						if((readx < 0 || readx >= width || ready < 0 || ready >= height))
+						{
+							continue;
+						}
+						float pixelValue = float(image[(ready * width + readx) * channels + channel]);
 
 						float kernelValue = kernel[(iy + radiusy) * kernelSize + ix + radiusx];
 
-						retf += pixelValue * kernelValue;
-						totalWeight += kernelValue;
+						totalWeight += pixelValue * kernelValue;
 					}
 				}
 
-				retf /= totalWeight;
-				convolvedImage[outIndex] = (unsigned char)(fmax(fmin(retf * 256.0f, 255.0f),0.0f));
-				outIndex++;
+				totalWeight = totalWeight / 9;
+				int outIndex = (y * width + x) * channels + channel;
+				convolvedImage[outIndex] = (unsigned char)fmax(0.0f, fmin(255.0f, totalWeight));
 			}
         }
     }
@@ -104,15 +106,17 @@ int main()
         fprintf(stderr, "Error loading image\n");
         exit(1);
     }
+	int ok = stbi_info("./chicago.jpg", &width, &height, &channels);
 
 	int N = width*height;
-	int k_size = 3;
-	float* kernel = new float[k_size*k_size];
-	kernel[0] = kernel[2] = kernel[6] = kernel[8] = 0;//0.0023f; // Corners
-	kernel[1] = kernel[3] = kernel[5] = kernel[7] = 0;//0.0432f; // Middles
-	kernel[4] = 1;//0.8180f; // Center
+	int kernelSize = 3;
+	float* kernel = new float[kernelSize*kernelSize];
+
+	kernel[0] = kernel[2] = kernel[6] = kernel[8] = 1.0f; // Corners
+	kernel[1] = kernel[3] = kernel[5] = kernel[7] = 1.0f; // Middles
+	kernel[4] = 1.0f; // Center
 	
-	unsigned char* convolvedImage = stbi_load("./chicago.jpg", &width, &height, &channels, 0);//= (unsigned char*)malloc(N * channels * sizeof(unsigned char*));
+	unsigned char* convolvedImage = (unsigned char*)malloc(N * channels * sizeof(unsigned char));
 
 	// Allocate GPU memory
 	unsigned char* d_image;
@@ -120,14 +124,14 @@ int main()
 	float* d_kernel;
 	cudaMalloc(&d_image, N * channels * sizeof(unsigned char));
 	cudaMalloc(&d_convolvedImage, N * channels * sizeof(unsigned char));
-	cudaMalloc(&d_kernel, k_size * k_size * sizeof(float));
+	cudaMalloc(&d_kernel, kernelSize * kernelSize * sizeof(float));
 
 	// Copy data into GPU
 	cudaMemcpy(d_image, image, N * channels * sizeof(unsigned char), cudaMemcpyHostToDevice);
-	cudaMemcpy(d_kernel, kernel, k_size * k_size * sizeof(float), cudaMemcpyHostToDevice);
+	cudaMemcpy(d_kernel, kernel, kernelSize * kernelSize * sizeof(float), cudaMemcpyHostToDevice);
 
 	// Define threads
-	dim3 blockSize(3, 3, channels);
+	dim3 blockSize(16, 16, 3);
 	dim3 gridSize((width + blockSize.x - 1) / blockSize.x, (height + blockSize.y - 1) / blockSize.y);
 
 	// Perform operation
@@ -145,10 +149,10 @@ int main()
 	cudaFree(d_kernel);
 
 	int result; 	
-    if(result = stbi_write_png("./cuda_output.jpg", width, height, channels, convolvedImage, width * channels)) 
+    if(result = stbi_write_png("./output_cuda.jpg", width, height, channels, convolvedImage, width * channels)) 
 	{
 		printf("Cuda convolved Image saved successfully\n");
-		for(int i = 0; i < 10; i++)
+		for(int i = width; i < width + 10; i++)
 		{
 			printf("Value check: %d | %d\n", image[i], convolvedImage[i]);
 		}
@@ -158,12 +162,12 @@ int main()
         printf("Error saving image\n");
     }
 
-	convolve(image, convolvedImage, height, width, channels, kernel, k_size);
+	convolve(image, convolvedImage, height, width, channels, kernel, kernelSize);
 
-    if(result = stbi_write_png("./lin_output.jpg", width, height, channels, convolvedImage, width * channels)) 
+    if(result = stbi_write_png("./output_linear.jpg", width, height, channels, convolvedImage, width * channels)) 
 	{
 		printf("Linear convolved Image saved successfully\n");
-		for(int i = 0; i < 10; i++)
+		for(int i = width; i < width + 10; i++)
 		{
 			printf("Value check: %d | %d\n", image[i], convolvedImage[i]);
 		}
