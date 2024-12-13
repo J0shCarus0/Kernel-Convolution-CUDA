@@ -27,20 +27,19 @@ __global__ void cuda_convolve(unsigned char* image, unsigned char* convolvedImag
 			{
 				int yCoordImg = y + colOffset;
 				int imageIdx = (yCoordImg * width + xCoordImg) * channels + c;
+				int kernelIdx = (rowOffset + halfKernel) * kernelSize + (colOffset + halfKernel);
 
 				// Boundary check
 				if((xCoordImg < 0 || xCoordImg >= width || yCoordImg < 0 || yCoordImg >= height))
 				{
 					continue;
 				}
-
-				int kernelIdx = (rowOffset + halfKernel) * kernelSize + (colOffset + halfKernel);
 				
 				pixelValue += kernel[kernelIdx] * float(image[imageIdx]);
 			}
 		}
 
-		pixelValue = pixelValue / 9;
+		pixelValue = pixelValue / float(kernelSize * kernelSize);
 		int outIdx = (y * width + x) * channels + c;
 		convolvedImage[outIdx] = (unsigned char)fmax(0.0f, fmin(255.0f, pixelValue));
 	}
@@ -89,7 +88,7 @@ void convolve(unsigned char* image, unsigned char* convolvedImage, int height, i
 					}
 				}
 
-				totalWeight = totalWeight / 9;
+				totalWeight = totalWeight / float(kernelSize * kernelSize);
 				int outIndex = (y * width + x) * channels + channel;
 				convolvedImage[outIndex] = (unsigned char)fmax(0.0f, fmin(255.0f, totalWeight));
 			}
@@ -109,12 +108,17 @@ int main()
 	int ok = stbi_info("./chicago.jpg", &width, &height, &channels);
 
 	int N = width*height;
-	int kernelSize = 3;
+	int kernelSize = 5;
 	float* kernel = new float[kernelSize*kernelSize];
 
-	kernel[0] = kernel[2] = kernel[6] = kernel[8] = 1.0f; // Corners
-	kernel[1] = kernel[3] = kernel[5] = kernel[7] = 1.0f; // Middles
-	kernel[4] = 1.0f; // Center
+	for(int row = 0; row < kernelSize; row++)
+	{
+		for(int col = 0; col < kernelSize; col++)
+		{
+			kernel[row * kernelSize + col] = 1.0f;
+		}
+	}
+	kernel[(kernelSize * kernelSize) / 2 ] = 1.0f;
 	
 	unsigned char* convolvedImage = (unsigned char*)malloc(N * channels * sizeof(unsigned char));
 
@@ -135,7 +139,7 @@ int main()
 	dim3 gridSize((width + blockSize.x - 1) / blockSize.x, (height + blockSize.y - 1) / blockSize.y);
 
 	// Perform operation
-	cuda_convolve<<<gridSize, blockSize>>>(d_image, d_convolvedImage, height, width, channels, d_kernel, 3);
+	cuda_convolve<<<gridSize, blockSize>>>(d_image, d_convolvedImage, height, width, channels, d_kernel, kernelSize);
 
 	// Wait for operation to complete
 	cudaDeviceSynchronize();
